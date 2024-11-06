@@ -1,0 +1,100 @@
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    outline: none;
+    background-color: #e9e6e6;
+    border: none;
+    transition: 0.2s;
+}
+
+button a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+button a:hover{
+    color: aquamarine;
+    transition: 0.2s;
+}
+
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.settingImg{
+    width: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.settingImg:hover{
+    transform: rotate(60deg);
+    transition: .2s;
+}
+
+.setting-folder{
+    top: 10%;
+    right: 1%;
+    position: absolute;
+    background: #fff;
+    box-shadow: 5px 5px 5px 5px #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0;
+}
+
+.setting-folder ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.setting-folder a{
+    color: #000;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.setting-folder a:hover{
+    color: rgb(88, 49, 216);
+    transition: .2s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.border{
+    width: 100%;
+    border-top:2px solid black ;
+}
+
+.first-section{
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 546px) {
+    .header-flex h2{
+        font-size: 10px;
+    } 
+    .header-flex p{
+        font-size: 2.5vw
+    }
+    .header-flex button{
+        font-size: 2.5vw
+    }
+    .settingImg{
+        width: 4vw;
+    }
+}
